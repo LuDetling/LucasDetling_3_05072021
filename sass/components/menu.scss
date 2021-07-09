@@ -40,25 +40,64 @@
             }
         }
 
-        .block-aliments {
+        .maxi-block-aliments {
             display: flex;
-            align-items: flex-end;
-            justify-content: space-between;
             background: white;
-            padding: 15px;
-            border-radius: 15px;
-            margin-bottom: 20px;
             @extend %shadow;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            overflow: hidden;
+            cursor: pointer;
+            width: 100%;
+            justify-content: space-between;
 
-            .aliments {
-                h4 {
-                    font-size: 1.1rem;
-                    margin-bottom: 10px;
+
+
+
+
+            .block-aliments {
+                width: 100%;
+                padding: 15px;
+                position: relative;
+
+                .aliments {
+                    h4 {
+                        font-size: 1.1rem;
+                        margin-bottom: 10px;
+                    }
                 }
+
             }
 
-            .prix {
-                font-weight: bold;
+            .choix {
+                display: flex;
+                position: relative;
+                transform: translateX(56%);
+                transition: .5s;
+                .prix {
+                    font-weight: bold;
+                    display: flex;
+                    align-items: flex-end;
+                    padding-bottom: 15px;
+                }
+
+                .cocher {
+                    background: $tertiaire;
+                    display: flex;
+                    align-items: center;
+                    color: white;
+                    font-size: 20px;
+                    padding: 20px;
+                    margin-left: 20px;
+                    border-top-right-radius: 15px;
+                    border-bottom-right-radius: 15px;
+                    position: relative;
+                }
+            }
+            &:hover {
+                .choix {
+                    transform: translateX(0);
+                }
             }
         }
     }

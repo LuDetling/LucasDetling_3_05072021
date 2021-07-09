@@ -43,6 +43,10 @@
             padding: 15px;
 
             .nom-lieu {
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
                 p {
                     margin-top: 10px;
                 }

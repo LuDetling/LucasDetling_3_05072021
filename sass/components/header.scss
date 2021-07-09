@@ -5,10 +5,18 @@ header {
 .block-logo {
     @extend %shadow;
     padding: 20px;
-}
-
-.logo {
-    width: 50%;
-    margin: auto;
-    display: block;
+    position: relative;
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    .fa-arrow-left {
+        position: absolute;
+        font-size: 31px;
+    }
+    .logo {
+        width: 50%;
+        margin: auto;
+        display: block;
+    }
 }

@@ -36,9 +36,17 @@ header {
 
 .block-logo {
   padding: 20px;
+  position: relative;
 }
-
-.logo {
+.block-logo a {
+  text-decoration: none;
+  color: black;
+}
+.block-logo .fa-arrow-left {
+  position: absolute;
+  font-size: 31px;
+}
+.block-logo .logo {
   width: 50%;
   margin: auto;
   display: block;
@@ -124,6 +132,10 @@ header {
   justify-content: space-between;
   padding: 15px;
 }
+.block-restaurants .card-restaurant .nom-coeur .nom-lieu a {
+  text-decoration: none;
+  color: black;
+}
 .block-restaurants .card-restaurant .nom-coeur .nom-lieu p {
   margin-top: 10px;
 }
@@ -194,21 +206,51 @@ header {
   background: #99E2D0;
   margin-top: 5px;
 }
-.block-menu .menu .block-aliments {
+.block-menu .menu .maxi-block-aliments {
   display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
   background: white;
-  padding: 15px;
-  border-radius: 15px;
   margin-bottom: 20px;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  width: 100%;
+  justify-content: space-between;
 }
-.block-menu .menu .block-aliments .aliments h4 {
+.block-menu .menu .maxi-block-aliments .block-aliments {
+  width: 100%;
+  padding: 15px;
+  position: relative;
+}
+.block-menu .menu .maxi-block-aliments .block-aliments .aliments h4 {
   font-size: 1.1rem;
   margin-bottom: 10px;
 }
-.block-menu .menu .block-aliments .prix {
+.block-menu .menu .maxi-block-aliments .choix {
+  display: flex;
+  position: relative;
+  transform: translateX(56%);
+  transition: 0.5s;
+}
+.block-menu .menu .maxi-block-aliments .choix .prix {
   font-weight: bold;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 15px;
+}
+.block-menu .menu .maxi-block-aliments .choix .cocher {
+  background: #99E2D0;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  margin-left: 20px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  position: relative;
+}
+.block-menu .menu .maxi-block-aliments:hover .choix {
+  transform: translateX(0);
 }
 .block-menu .commander {
   text-align: center;
@@ -231,7 +273,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.block-fonctionnement .fonctionnement, .block-logo, .block-exploration a, .block-restaurants .card-restaurant, .block-menu .menu .block-aliments, .block-menu .commander {
+.block-fonctionnement .fonctionnement, .block-logo, .block-exploration a, .block-restaurants .card-restaurant, .block-menu .menu .maxi-block-aliments, .block-menu .commander {
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 }
 
