@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "sass": "^1.35.2"
+  },
+  "name": "lucasdetling_3_05072021",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass::watch": "sass --watch"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuDetling/LucasDetling_3_05072021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LuDetling/LucasDetling_3_05072021/issues"
+  },
+  "homepage": "https://github.com/LuDetling/LucasDetling_3_05072021#readme",
+  "description": ""
+}
