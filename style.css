@@ -86,7 +86,7 @@ header {
 }
 
 .block-restaurants {
-  background: rgba(114, 114, 114, 0.05);
+  background: #f8f8f8;
   padding: 20px;
 }
 .block-restaurants h2 {
@@ -157,11 +157,81 @@ header {
   width: 20px;
 }
 
+.block-menu {
+  background: #f8f8f8;
+}
+.block-menu .image-restaurant {
+  width: 100%;
+}
+.block-menu .image-restaurant img {
+  width: 100%;
+}
+.block-menu .menu {
+  position: relative;
+  background: #f8f8f8;
+  top: -50px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  padding: 20px;
+}
+.block-menu .menu .titre-coeur {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  font-family: "Shrikhand", "cursive";
+  margin: 20px 0;
+}
+.block-menu .menu .titre-menu {
+  text-transform: uppercase;
+  font-weight: 100;
+  margin: 40px 0 20px;
+  position: relative;
+}
+.block-menu .menu .titre-menu .barre-verte {
+  width: 40px;
+  height: 3px;
+  background: #99E2D0;
+  margin-top: 5px;
+}
+.block-menu .menu .block-aliments {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.block-menu .menu .block-aliments .aliments h4 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+.block-menu .menu .block-aliments .prix {
+  font-weight: bold;
+}
+.block-menu .commander {
+  text-align: center;
+  border: none;
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 36px;
+  font-weight: bold;
+  width: 40%;
+  margin: 60px auto 20px;
+  cursor: pointer;
+}
+.block-menu .commander .bouton-commander {
+  color: white;
+  text-decoration: none;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
 
-.block-fonctionnement .fonctionnement, .block-logo, .block-exploration a, .block-restaurants .card-restaurant {
+.block-fonctionnement .fonctionnement, .block-logo, .block-exploration a, .block-restaurants .card-restaurant, .block-menu .menu .block-aliments, .block-menu .commander {
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 }
 

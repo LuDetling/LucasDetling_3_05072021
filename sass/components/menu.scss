@@ -1,0 +1,86 @@
+.block-menu {
+    background: $gris-leger;
+
+    .image-restaurant {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .menu {
+        position: relative;
+        background: $gris-leger;
+        top: -50px;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        padding: 20px;
+
+        .titre-coeur {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 1.5rem;
+            font-family: $titre;
+            margin: 20px 0;
+        }
+
+        .titre-menu {
+            text-transform: uppercase;
+            font-weight: 100;
+            margin: 40px 0 20px;
+            position: relative;
+
+            .barre-verte {
+                width: 40px;
+                height: 3px;
+                background: $tertiaire;
+                margin-top: 5px;
+            }
+        }
+
+        .block-aliments {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            background: white;
+            padding: 15px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            @extend %shadow;
+
+            .aliments {
+                h4 {
+                    font-size: 1.1rem;
+                    margin-bottom: 10px;
+                }
+            }
+
+            .prix {
+                font-weight: bold;
+            }
+        }
+    }
+
+    .commander {
+        text-align: center;
+        border: none;
+        background: linear-gradient(to top, $primaire, $secondaire);
+        padding: 15px;
+        font-size: 16px;
+        border-radius: 36px;
+        @extend %shadow;
+        font-weight: bold;
+        width: 40%;
+        margin: 60px auto 20px;
+        cursor: pointer;
+
+        .bouton-commander {
+            color: white;
+            text-decoration: none;
+
+        }
+    }
+
+}
