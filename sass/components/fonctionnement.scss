@@ -1,0 +1,36 @@
+.block-fonctionnement {
+    padding: 15px;
+
+    .fonctionnement {
+        position: relative;
+        display: flex;
+        border-radius: 25px;
+        background: rgba(114, 114, 114, 0.05);
+        @extend %shadow;
+        margin: 20px 0;
+        padding: 20px;
+        font-weight: bold;
+
+        .pastille {
+            position: absolute;
+            left: -2%;
+            top: 27%;
+            background: $primaire;
+            border-radius: 100%;
+            color: white;
+            width: 20px;
+            padding: 3px 3px;
+            text-align: center;
+        }
+
+        i {
+            margin-right: 20px;
+            color: grey;
+            left: 15%;
+            margin-left: 30px;
+            width: 20px;
+            font-size: 20px;
+        }
+
+    }
+}

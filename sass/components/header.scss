@@ -1,0 +1,14 @@
+header {
+    width: 100%;
+}
+
+.block-logo {
+    @extend %shadow;
+    padding: 20px;
+}
+
+.logo {
+    width: 50%;
+    margin: auto;
+    display: block;
+}
