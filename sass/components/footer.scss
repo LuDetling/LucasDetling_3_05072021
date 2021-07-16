@@ -1,24 +1,27 @@
 .footer {
-    background: rgba(0, 0, 0, .8);
+    background: rgba(0, 0, 0, 0.8);
     color: white;
     padding: 20px;
     display: flex;
     flex-direction: column;
 
     h3 {
-        font-family: 'Shrikhand', cursive;
+        font-family: "Shrikhand", cursive;
         font-weight: 400;
         margin-bottom: 15px;
     }
 
-    a {
-        color: white;
-        text-decoration: none;
-        line-height: 25px;
+    ul {
+        list-style: none;
+        a {
+            color: white;
+            text-decoration: none;
+            line-height: 25px;
 
-        i {
-            margin-right: 7px;
-            width: 20px;
+            i {
+                margin-right: 7px;
+                width: 20px;
+            }
         }
     }
 }

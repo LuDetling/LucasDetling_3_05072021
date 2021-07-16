@@ -3,9 +3,20 @@ $primaire: #9356DC;
 $secondaire: #FF79DA;
 $tertiaire: #99E2D0;
 $gris-leger: #f8f8f8;
+$fondu: linear-gradient(to top, $primaire, $secondaire);
 
 // FONT FAMILY
 $roboto: 'Roboto',
 sans-serif;
 $titre: 'Shrikhand',
 'cursive';
+
+// Extend
+
+%shadow {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .1);
+}
+
+%shadow-porte {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+}

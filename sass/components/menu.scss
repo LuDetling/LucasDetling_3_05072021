@@ -1,5 +1,6 @@
 .block-menu {
     background: $gris-leger;
+    overflow: hidden;
 
     .image-restaurant {
         width: 100%;
@@ -24,6 +25,19 @@
             font-size: 1.5rem;
             font-family: $titre;
             margin: 20px 0;
+            i {
+                font-size: 25px;
+                cursor: pointer;
+                // chekbox et si chek mettre couleur
+                -webkit-text-stroke: 2px black;
+                color: transparent;
+                transition: color 0.2s;
+            }
+
+            i:hover {
+                color: $primaire;
+                -webkit-text-stroke: 2px $primaire;
+            }
         }
 
         .titre-menu {
@@ -40,6 +54,23 @@
             }
         }
 
+        @for $i from 0 through 100 {
+            .maxi-block-aliments:nth-child(#{$i}) {
+                animation: affichage-aliments $i * .3s;
+            }
+        }
+
+        @keyframes affichage-aliments {
+            from {
+                transform: translateX(20%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
         .maxi-block-aliments {
             display: flex;
             background: white;
@@ -50,30 +81,25 @@
             cursor: pointer;
             width: 100%;
             justify-content: space-between;
-
-
-
-
-
             .block-aliments {
                 width: 100%;
                 padding: 15px;
                 position: relative;
 
                 .aliments {
+                    text-overflow: ellipsis;
                     h4 {
                         font-size: 1.1rem;
                         margin-bottom: 10px;
                     }
                 }
-
             }
 
             .choix {
                 display: flex;
                 position: relative;
                 transform: translateX(56%);
-                transition: .5s;
+                transition: 0.5s;
                 .prix {
                     font-weight: bold;
                     display: flex;
@@ -114,12 +140,14 @@
         width: 40%;
         margin: 60px auto 20px;
         cursor: pointer;
-
+        transition: 0.2s;
         .bouton-commander {
             color: white;
             text-decoration: none;
-
+        }
+        &:hover {
+            background: linear-gradient(to top, lighten($primaire, 3), lighten($secondaire, 3));
+            @extend %shadow-porte;
         }
     }
-
 }

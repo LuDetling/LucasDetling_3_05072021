@@ -1,3 +1,11 @@
+.block-menu .commander, .block-menu .menu .maxi-block-aliments, .block-restaurants .card-restaurant, .block-exploration a, .block-logo, .block-fonctionnement .fonctionnement {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.block-menu .commander:hover, .block-exploration a:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
 .block-fonctionnement {
   padding: 15px;
 }
@@ -67,8 +75,9 @@ header {
   text-align: center;
   padding: 40px;
 }
-.block-exploration h2 {
+.block-exploration h1 {
   margin-bottom: 15px;
+  font-size: 28px;
 }
 .block-exploration p {
   margin-bottom: 30px;
@@ -83,6 +92,10 @@ header {
   font-weight: bold;
   cursor: pointer;
   text-decoration: none;
+  transition: 0.2s;
+}
+.block-exploration a:hover {
+  background: linear-gradient(to top, #9b63df, #ff88de);
 }
 
 *,
@@ -142,9 +155,13 @@ header {
 .block-restaurants .card-restaurant .nom-coeur .coeur {
   font-size: 25px;
   cursor: pointer;
+  -webkit-text-stroke: 2px black;
+  color: transparent;
+  transition: color 0.2s;
 }
-.block-restaurants .card-restaurant .nom-coeur .coeur:active {
+.block-restaurants .card-restaurant .nom-coeur .coeur:hover {
   color: #9356DC;
+  -webkit-text-stroke: 2px #9356DC;
 }
 
 .footer {
@@ -159,18 +176,22 @@ header {
   font-weight: 400;
   margin-bottom: 15px;
 }
-.footer a {
+.footer ul {
+  list-style: none;
+}
+.footer ul a {
   color: white;
   text-decoration: none;
   line-height: 25px;
 }
-.footer a i {
+.footer ul a i {
   margin-right: 7px;
   width: 20px;
 }
 
 .block-menu {
   background: #f8f8f8;
+  overflow: hidden;
 }
 .block-menu .image-restaurant {
   width: 100%;
@@ -194,6 +215,17 @@ header {
   font-family: "Shrikhand", "cursive";
   margin: 20px 0;
 }
+.block-menu .menu .titre-coeur i {
+  font-size: 25px;
+  cursor: pointer;
+  -webkit-text-stroke: 2px black;
+  color: transparent;
+  transition: color 0.2s;
+}
+.block-menu .menu .titre-coeur i:hover {
+  color: #9356DC;
+  -webkit-text-stroke: 2px #9356DC;
+}
 .block-menu .menu .titre-menu {
   text-transform: uppercase;
   font-weight: 100;
@@ -205,6 +237,319 @@ header {
   height: 3px;
   background: #99E2D0;
   margin-top: 5px;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(0) {
+  animation: affichage-aliments 0s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(1) {
+  animation: affichage-aliments 0.3s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(2) {
+  animation: affichage-aliments 0.6s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(3) {
+  animation: affichage-aliments 0.9s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(4) {
+  animation: affichage-aliments 1.2s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(5) {
+  animation: affichage-aliments 1.5s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(6) {
+  animation: affichage-aliments 1.8s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(7) {
+  animation: affichage-aliments 2.1s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(8) {
+  animation: affichage-aliments 2.4s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(9) {
+  animation: affichage-aliments 2.7s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(10) {
+  animation: affichage-aliments 3s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(11) {
+  animation: affichage-aliments 3.3s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(12) {
+  animation: affichage-aliments 3.6s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(13) {
+  animation: affichage-aliments 3.9s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(14) {
+  animation: affichage-aliments 4.2s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(15) {
+  animation: affichage-aliments 4.5s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(16) {
+  animation: affichage-aliments 4.8s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(17) {
+  animation: affichage-aliments 5.1s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(18) {
+  animation: affichage-aliments 5.4s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(19) {
+  animation: affichage-aliments 5.7s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(20) {
+  animation: affichage-aliments 6s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(21) {
+  animation: affichage-aliments 6.3s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(22) {
+  animation: affichage-aliments 6.6s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(23) {
+  animation: affichage-aliments 6.9s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(24) {
+  animation: affichage-aliments 7.2s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(25) {
+  animation: affichage-aliments 7.5s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(26) {
+  animation: affichage-aliments 7.8s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(27) {
+  animation: affichage-aliments 8.1s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(28) {
+  animation: affichage-aliments 8.4s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(29) {
+  animation: affichage-aliments 8.7s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(30) {
+  animation: affichage-aliments 9s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(31) {
+  animation: affichage-aliments 9.3s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(32) {
+  animation: affichage-aliments 9.6s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(33) {
+  animation: affichage-aliments 9.9s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(34) {
+  animation: affichage-aliments 10.2s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(35) {
+  animation: affichage-aliments 10.5s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(36) {
+  animation: affichage-aliments 10.8s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(37) {
+  animation: affichage-aliments 11.1s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(38) {
+  animation: affichage-aliments 11.4s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(39) {
+  animation: affichage-aliments 11.7s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(40) {
+  animation: affichage-aliments 12s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(41) {
+  animation: affichage-aliments 12.3s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(42) {
+  animation: affichage-aliments 12.6s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(43) {
+  animation: affichage-aliments 12.9s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(44) {
+  animation: affichage-aliments 13.2s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(45) {
+  animation: affichage-aliments 13.5s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(46) {
+  animation: affichage-aliments 13.8s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(47) {
+  animation: affichage-aliments 14.1s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(48) {
+  animation: affichage-aliments 14.4s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(49) {
+  animation: affichage-aliments 14.7s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(50) {
+  animation: affichage-aliments 15s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(51) {
+  animation: affichage-aliments 15.3s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(52) {
+  animation: affichage-aliments 15.6s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(53) {
+  animation: affichage-aliments 15.9s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(54) {
+  animation: affichage-aliments 16.2s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(55) {
+  animation: affichage-aliments 16.5s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(56) {
+  animation: affichage-aliments 16.8s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(57) {
+  animation: affichage-aliments 17.1s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(58) {
+  animation: affichage-aliments 17.4s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(59) {
+  animation: affichage-aliments 17.7s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(60) {
+  animation: affichage-aliments 18s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(61) {
+  animation: affichage-aliments 18.3s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(62) {
+  animation: affichage-aliments 18.6s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(63) {
+  animation: affichage-aliments 18.9s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(64) {
+  animation: affichage-aliments 19.2s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(65) {
+  animation: affichage-aliments 19.5s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(66) {
+  animation: affichage-aliments 19.8s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(67) {
+  animation: affichage-aliments 20.1s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(68) {
+  animation: affichage-aliments 20.4s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(69) {
+  animation: affichage-aliments 20.7s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(70) {
+  animation: affichage-aliments 21s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(71) {
+  animation: affichage-aliments 21.3s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(72) {
+  animation: affichage-aliments 21.6s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(73) {
+  animation: affichage-aliments 21.9s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(74) {
+  animation: affichage-aliments 22.2s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(75) {
+  animation: affichage-aliments 22.5s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(76) {
+  animation: affichage-aliments 22.8s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(77) {
+  animation: affichage-aliments 23.1s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(78) {
+  animation: affichage-aliments 23.4s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(79) {
+  animation: affichage-aliments 23.7s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(80) {
+  animation: affichage-aliments 24s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(81) {
+  animation: affichage-aliments 24.3s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(82) {
+  animation: affichage-aliments 24.6s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(83) {
+  animation: affichage-aliments 24.9s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(84) {
+  animation: affichage-aliments 25.2s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(85) {
+  animation: affichage-aliments 25.5s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(86) {
+  animation: affichage-aliments 25.8s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(87) {
+  animation: affichage-aliments 26.1s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(88) {
+  animation: affichage-aliments 26.4s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(89) {
+  animation: affichage-aliments 26.7s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(90) {
+  animation: affichage-aliments 27s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(91) {
+  animation: affichage-aliments 27.3s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(92) {
+  animation: affichage-aliments 27.6s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(93) {
+  animation: affichage-aliments 27.9s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(94) {
+  animation: affichage-aliments 28.2s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(95) {
+  animation: affichage-aliments 28.5s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(96) {
+  animation: affichage-aliments 28.8s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(97) {
+  animation: affichage-aliments 29.1s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(98) {
+  animation: affichage-aliments 29.4s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(99) {
+  animation: affichage-aliments 29.7s;
+}
+.block-menu .menu .maxi-block-aliments:nth-child(100) {
+  animation: affichage-aliments 30s;
+}
+@keyframes affichage-aliments {
+  from {
+    transform: translateX(20%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 .block-menu .menu .maxi-block-aliments {
   display: flex;
@@ -220,6 +565,9 @@ header {
   width: 100%;
   padding: 15px;
   position: relative;
+}
+.block-menu .menu .maxi-block-aliments .block-aliments .aliments {
+  text-overflow: ellipsis;
 }
 .block-menu .menu .maxi-block-aliments .block-aliments .aliments h4 {
   font-size: 1.1rem;
@@ -263,18 +611,72 @@ header {
   width: 40%;
   margin: 60px auto 20px;
   cursor: pointer;
+  transition: 0.2s;
 }
 .block-menu .commander .bouton-commander {
   color: white;
   text-decoration: none;
 }
-
-body {
-  font-family: "Roboto", sans-serif;
+.block-menu .commander:hover {
+  background: linear-gradient(to top, #9b63df, #ff88de);
 }
 
-.block-fonctionnement .fonctionnement, .block-logo, .block-exploration a, .block-restaurants .card-restaurant, .block-menu .menu .maxi-block-aliments, .block-menu .commander {
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+body {
+  animation: body-hidden 3s;
+}
+
+.loading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+  animation: afficher-loading 3s;
+}
+.loading .spinner {
+  width: 0px;
+  background-color: #99E2D0;
+  animation: spinner 3s;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+@keyframes afficher-loading {
+  0% {
+    height: 100vh;
+  }
+  80% {
+    height: 100vh;
+  }
+  100% {
+    height: 0;
+  }
+}
+@keyframes spinner {
+  0% {
+    height: 30px;
+  }
+  80% {
+    height: 30px;
+  }
+  100% {
+    width: 120%;
+    height: 0;
+    border-radius: 0;
+  }
+}
+@keyframes body-hidden {
+  0% {
+    overflow: hidden;
+  }
+  99% {
+    overflow: hidden;
+  }
+  100% {
+    overflow: visible;
+  }
+}
+body {
+  font-family: "Roboto", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */

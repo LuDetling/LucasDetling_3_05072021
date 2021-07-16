@@ -14,8 +14,9 @@
     text-align: center;
     padding: 40px;
 
-    h2 {
+    h1 {
         margin-bottom: 15px;
+        font-size: 28px;
     }
 
     p {
@@ -33,6 +34,10 @@
         font-weight: bold;
         cursor: pointer;
         text-decoration: none;
+        transition: .2s;
+        &:hover {
+            background: linear-gradient(to top, lighten($primaire, 3), lighten($secondaire, 3));
+            @extend %shadow-porte;
+        }
     }
-
 }
