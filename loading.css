@@ -1,0 +1,56 @@
+body {
+  animation: body-hidden 3s;
+}
+
+.loading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+  animation: afficher-loading 3s;
+}
+.loading .spinner {
+  width: 0px;
+  background-color: #99E2D0;
+  animation: spinner 3s;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+@keyframes afficher-loading {
+  0% {
+    height: 100vh;
+  }
+  80% {
+    height: 100vh;
+  }
+  100% {
+    height: 0;
+  }
+}
+@keyframes spinner {
+  0% {
+    height: 30px;
+  }
+  80% {
+    height: 30px;
+  }
+  100% {
+    width: 120%;
+    height: 0;
+    border-radius: 0;
+  }
+}
+@keyframes body-hidden {
+  0% {
+    overflow: hidden;
+  }
+  99% {
+    overflow: hidden;
+  }
+  100% {
+    overflow: visible;
+  }
+}
+
+/*# sourceMappingURL=loading.css.map */

@@ -58,13 +58,16 @@ header {
 .block-logo a {
   text-decoration: none;
   color: black;
+  display: flex;
+  align-items: center;
 }
 .block-logo .fa-arrow-left {
-  position: absolute;
   font-size: 31px;
+  margin-right: 10px;
 }
 .block-logo .logo {
-  width: 50%;
+  min-width: 150px;
+  max-width: 320px;
   margin: auto;
   display: block;
 }
@@ -184,7 +187,7 @@ header {
   display: flex;
   flex-direction: column;
 }
-.footer h3 {
+.footer h2 {
   font-family: "Shrikhand", cursive;
   font-weight: 400;
   margin-bottom: 15px;
@@ -263,6 +266,7 @@ header {
   background-color: white;
   overflow: hidden;
   margin-bottom: 15px;
+  opacity: 0;
 }
 .block-menu .menu .carte-menu .left-carte {
   padding: 15px;
@@ -296,165 +300,45 @@ header {
   justify-content: center;
   transition: 0.5s;
   width: 0;
-  font-size: 0;
+  font-size: 1.5rem;
   color: white;
+}
+.block-menu .menu .carte-menu .right-carte i {
+  transition: 0.5s;
 }
 .block-menu .menu .carte-menu:hover .right-carte {
   width: 100px;
-  font-size: 1.2rem;
 }
-.block-menu .menu .carte-menu:nth-child(0) {
-  animation: affichage-aliments 0s;
+.block-menu .menu .carte-menu:hover .right-carte i {
+  transform: rotate(360deg);
 }
-.block-menu .menu .carte-menu:nth-child(1) {
-  animation: affichage-aliments 0.3s;
+.block-menu .menu .block-carte .carte-menu:nth-child(3) {
+  animation-name: affichage-aliments;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
 }
-.block-menu .menu .carte-menu:nth-child(2) {
-  animation: affichage-aliments 0.6s;
+.block-menu .menu .block-carte .carte-menu:nth-child(4) {
+  animation-name: affichage-aliments;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
 }
-.block-menu .menu .carte-menu:nth-child(3) {
-  animation: affichage-aliments 0.9s;
+.block-menu .menu .block-carte .carte-menu:nth-child(5) {
+  animation-name: affichage-aliments;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
 }
-.block-menu .menu .carte-menu:nth-child(4) {
-  animation: affichage-aliments 1.2s;
-}
-.block-menu .menu .carte-menu:nth-child(5) {
-  animation: affichage-aliments 1.5s;
-}
-.block-menu .menu .carte-menu:nth-child(6) {
-  animation: affichage-aliments 1.8s;
-}
-.block-menu .menu .carte-menu:nth-child(7) {
-  animation: affichage-aliments 2.1s;
-}
-.block-menu .menu .carte-menu:nth-child(8) {
-  animation: affichage-aliments 2.4s;
-}
-.block-menu .menu .carte-menu:nth-child(9) {
-  animation: affichage-aliments 2.7s;
-}
-.block-menu .menu .carte-menu:nth-child(10) {
-  animation: affichage-aliments 3s;
-}
-.block-menu .menu .carte-menu:nth-child(11) {
-  animation: affichage-aliments 3.3s;
-}
-.block-menu .menu .carte-menu:nth-child(12) {
-  animation: affichage-aliments 3.6s;
-}
-.block-menu .menu .carte-menu:nth-child(13) {
-  animation: affichage-aliments 3.9s;
-}
-.block-menu .menu .carte-menu:nth-child(14) {
-  animation: affichage-aliments 4.2s;
-}
-.block-menu .menu .carte-menu:nth-child(15) {
-  animation: affichage-aliments 4.5s;
-}
-.block-menu .menu .carte-menu:nth-child(16) {
-  animation: affichage-aliments 4.8s;
-}
-.block-menu .menu .carte-menu:nth-child(17) {
-  animation: affichage-aliments 5.1s;
-}
-.block-menu .menu .carte-menu:nth-child(18) {
-  animation: affichage-aliments 5.4s;
-}
-.block-menu .menu .carte-menu:nth-child(19) {
-  animation: affichage-aliments 5.7s;
-}
-.block-menu .menu .carte-menu:nth-child(20) {
-  animation: affichage-aliments 6s;
-}
-.block-menu .menu .carte-menu:nth-child(21) {
-  animation: affichage-aliments 6.3s;
-}
-.block-menu .menu .carte-menu:nth-child(22) {
-  animation: affichage-aliments 6.6s;
-}
-.block-menu .menu .carte-menu:nth-child(23) {
-  animation: affichage-aliments 6.9s;
-}
-.block-menu .menu .carte-menu:nth-child(24) {
-  animation: affichage-aliments 7.2s;
-}
-.block-menu .menu .carte-menu:nth-child(25) {
-  animation: affichage-aliments 7.5s;
-}
-.block-menu .menu .carte-menu:nth-child(26) {
-  animation: affichage-aliments 7.8s;
-}
-.block-menu .menu .carte-menu:nth-child(27) {
-  animation: affichage-aliments 8.1s;
-}
-.block-menu .menu .carte-menu:nth-child(28) {
-  animation: affichage-aliments 8.4s;
-}
-.block-menu .menu .carte-menu:nth-child(29) {
-  animation: affichage-aliments 8.7s;
-}
-.block-menu .menu .carte-menu:nth-child(30) {
-  animation: affichage-aliments 9s;
-}
-.block-menu .menu .carte-menu:nth-child(31) {
-  animation: affichage-aliments 9.3s;
-}
-.block-menu .menu .carte-menu:nth-child(32) {
-  animation: affichage-aliments 9.6s;
-}
-.block-menu .menu .carte-menu:nth-child(33) {
-  animation: affichage-aliments 9.9s;
-}
-.block-menu .menu .carte-menu:nth-child(34) {
-  animation: affichage-aliments 10.2s;
-}
-.block-menu .menu .carte-menu:nth-child(35) {
-  animation: affichage-aliments 10.5s;
-}
-.block-menu .menu .carte-menu:nth-child(36) {
-  animation: affichage-aliments 10.8s;
-}
-.block-menu .menu .carte-menu:nth-child(37) {
-  animation: affichage-aliments 11.1s;
-}
-.block-menu .menu .carte-menu:nth-child(38) {
-  animation: affichage-aliments 11.4s;
-}
-.block-menu .menu .carte-menu:nth-child(39) {
-  animation: affichage-aliments 11.7s;
-}
-.block-menu .menu .carte-menu:nth-child(40) {
-  animation: affichage-aliments 12s;
-}
-.block-menu .menu .carte-menu:nth-child(41) {
-  animation: affichage-aliments 12.3s;
-}
-.block-menu .menu .carte-menu:nth-child(42) {
-  animation: affichage-aliments 12.6s;
-}
-.block-menu .menu .carte-menu:nth-child(43) {
-  animation: affichage-aliments 12.9s;
-}
-.block-menu .menu .carte-menu:nth-child(44) {
-  animation: affichage-aliments 13.2s;
-}
-.block-menu .menu .carte-menu:nth-child(45) {
-  animation: affichage-aliments 13.5s;
-}
-.block-menu .menu .carte-menu:nth-child(46) {
-  animation: affichage-aliments 13.8s;
-}
-.block-menu .menu .carte-menu:nth-child(47) {
-  animation: affichage-aliments 14.1s;
-}
-.block-menu .menu .carte-menu:nth-child(48) {
-  animation: affichage-aliments 14.4s;
-}
-.block-menu .menu .carte-menu:nth-child(49) {
-  animation: affichage-aliments 14.7s;
-}
-.block-menu .menu .carte-menu:nth-child(50) {
-  animation: affichage-aliments 15s;
+.block-menu .menu .block-carte .carte-menu:nth-child(6) {
+  animation-name: affichage-aliments;
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
 }
 @keyframes affichage-aliments {
   from {
@@ -487,62 +371,14 @@ header {
   background: linear-gradient(to top, #9b63df, #ff88de);
 }
 
-body {
-  animation: body-hidden 3s;
+.main {
+  max-width: 640px;
+  margin: auto;
 }
 
-.loading {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  background: linear-gradient(to top, #9356DC, #FF79DA);
-  animation: afficher-loading 3s;
-}
-.loading .spinner {
-  width: 0px;
-  background-color: #99E2D0;
-  animation: spinner 3s;
-  border-bottom-right-radius: 20px;
-  border-top-right-radius: 20px;
-}
-
-@keyframes afficher-loading {
-  0% {
-    height: 100vh;
-  }
-  80% {
-    height: 100vh;
-  }
-  100% {
-    height: 0;
-  }
-}
-@keyframes spinner {
-  0% {
-    height: 30px;
-  }
-  80% {
-    height: 30px;
-  }
-  100% {
-    width: 120%;
-    height: 0;
-    border-radius: 0;
-  }
-}
-@keyframes body-hidden {
-  0% {
-    overflow: hidden;
-  }
-  99% {
-    overflow: hidden;
-  }
-  100% {
-    overflow: visible;
-  }
-}
 body {
   font-family: "Roboto", sans-serif;
+  background-color: #F8F8F8;
 }
 
 /*# sourceMappingURL=style.css.map */
